@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techris Mobile App</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<canvas id="matrix-bg"></canvas>
+
+<header class="hero">
+  <img src="img/logo.png" alt="Techris Mobile Logo" class="main-logo">
+
+  <h1>Techris Mobile App</h1>
+
+  <p>
+    Customer Requests • Technician Dashboard • Owner Controls
+  </p>
+</header>
+
+<main class="app-grid">
+
+  <!-- CUSTOMER -->
+  <section class="panel">
+    <h2>Customer Portal</h2>
+
+    <input id="customer-name" type="text" placeholder="Customer Name">
+
+    <select id="service-type">
+      <option value="">Select Service</option>
+      <option value="Screen Repair">Screen Repair</option>
+      <option value="Battery Replacement">Battery Replacement</option>
+      <option value="Charging Port Repair">Charging Port Repair</option>
+      <option value="Smart Home Setup">Smart Home Setup</option>
+    </select>
+
+    <input id="customer-address" type="text" placeholder="Address">
+
+    <textarea id="customer-notes" placeholder="Describe the issue"></textarea>
+
+    <button onclick="createServiceRequest()">
+      Request Service
+    </button>
+
+    <div id="customer-result"></div>
+  </section>
+
+  <!-- WORKER -->
+  <section class="panel">
+    <h2>Worker Dashboard</h2>
+
+    <div id="worker-job-list">
+      No active jobs.
+    </div>
+  </section>
+
+  <!-- OWNER -->
+  <section class="panel">
+    <h2>Owner Dashboard</h2>
+
+    <input id="owner-pin" type="password" placeholder="Owner PIN">
+
+    <button onclick="unlockOwnerDashboard()">
+      Unlock
+    </button>
+
+    <div id="owner-dashboard" class="hidden">
+
+      <h3>Revenue</h3>
+
+      <p>Total Revenue:
+        <span id="total-paid">$0</span>
+      </p>
+
+      <p>Tax Holdback:
+        <span id="tax-holdback">$0</span>
+      </p>
+
+      <p>Operating Funds:
+        <span id="operating-cash">$0</span>
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

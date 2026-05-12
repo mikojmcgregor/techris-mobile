@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Techris Mobile | Mobile Repair & Smart Home Setup</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<canvas id="matrix-bg"></canvas>
+
+<header class="hero">
+  <nav class="navbar">
+    <img src="img/logo.png" alt="Techris Mobile Logo" class="nav-logo">
+
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#subscription">Techris+</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <img src="img/logo.png" alt="Techris Mobile Logo" class="main-logo">
+
+  <h1>Techris Mobile</h1>
+
+  <p class="hero-subtitle">
+    Mobile Repair • Smart Home Setup • Tech Solutions
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#pricing" class="cta-btn">Get a Quote</a>
+    <a href="#subscription" class="cta-btn secondary-btn">Join Techris+</a>
+  </div>
+</header>
+
+<main>
+
+<section class="brand-story">
+  <h2>About Techris Mobile</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Who We Are</h3>
+      <p>
+        Techris Mobile is a modern mobile-first tech service brand specializing in
+        iPhone repair, smart home installations, and personal tech solutions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>What We Do</h3>
+      <p>
+        From cracked screens and batteries to Wi-Fi optimization and smart security,
+        we bring professional tech services directly to you.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>
+        Our mission is to make technology simple, reliable, and convenient so you
+        can stay connected without stress.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section id="services">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>📱 iPhone Repair</h3>
+      <p>Screen replacement, battery service, charging port repair, diagnostics, and setup.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏠 Smart Home Setup</h3>
+      <p>Smart cameras, doorbells, locks, TVs, Wi-Fi mesh systems, and home automation.</p>
+    </div>
+
+    <div class="card">
+      <h3>💻 Tech Support</h3>
+      <p>Device setup, software help, backups, troubleshooting, and performance cleanup.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing-section">
+  <h2>Instant Pricing Estimate</h2>
+
+  <p class="section-subtitle">
+    Choose a service below to see an estimated price.
+  </p>
+
+  <div class="pricing-box">
+    <select id="service-select">
+      <option value="">Select a service</option>
+      <option value="screen">iPhone Screen Repair</option>
+      <option value="battery">Battery Replacement</option>
+      <option value="charging">Charging Port Repair</option>
+      <option value="diagnostic">Phone Diagnostic</option>
+      <option value="wifi">Wi-Fi Setup</option>
+      <option value="camera">Smart Camera Setup</option>
+      <option value="smart-home">Full Smart Home Setup</option>
+    </select>
+
+    <div id="price-display" class="price-display">
+      Your estimate will appear here.
+    </div>
+
+    <a href="#contact" class="cta-btn">Book This Service</a>
+  </div>
+</section>
+
+<section id="subscription" class="highlight">
+  <h2>Techris+ Subscription</h2>
+
+  <p>
+    Get priority support, discounted repairs, free diagnostics, and ongoing tech help.
+  </p>
+
+  <div class="subscription-grid">
+    <div class="sub-card">
+      <h3>Basic</h3>
+      <p class="price">$9.99/mo</p>
+      <p>Remote support and basic troubleshooting.</p>
+    </div>
+
+    <div class="sub-card featured">
+      <h3>Plus</h3>
+      <p class="price">$19.99/mo</p>
+      <p>Priority service, discounts, and free diagnostics.</p>
+    </div>
+
+    <div class="sub-card">
+      <h3>Premium</h3>
+      <p class="price">$39.99/mo</p>
+      <p>Smart home support, priority scheduling, and VIP help.</p>
+    </div>
+  </div>
+
+  <a href="#contact" class="cta-btn">Join Techris+</a>
+</section>
+
+<section>
+  <h2>Why Choose Techris Mobile?</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>⚡ Fast Turnaround</h3>
+      <p>Most repairs and setups can be completed quickly with convenient scheduling.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔒 Trusted Service</h3>
+      <p>Your devices, data, and home network are handled with care and professionalism.</p>
+    </div>
+
+    <div class="card">
+      <h3>🚗 Mobile Convenience</h3>
+      <p>We come to you — home, office, or wherever tech support is needed.</p>
+    </div>
+  </div>
+</section>
+
+<section id="app-preview" class="app-preview">
+  <h2>Techris Mobile App Coming Soon</h2>
+
+  <p>
+    Request repairs, track technician status, manage subscriptions, and receive smart tech support.
+  </p>
+
+  <a href="app/index.html" class="cta-btn">Open App Prototype</a>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Techris Mobile</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Phone Number">
+    <textarea placeholder="Tell us what you need help with..." required></textarea>
+
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Techris Mobile. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
